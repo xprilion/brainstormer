@@ -6,22 +6,7 @@ $(document).ready(function(){
 		itemSelector: '.item'
 	});
 
-	function myMap() {
-		
-		var myCenter = new google.maps.LatLng(22.476038, 88.414892);
-						  
-		var mapCanvas = document.getElementById("map");
-						 
-		 var mapOptions = {center: myCenter, zoom: 16};
-						  
-		var map = new google.maps.Map(mapCanvas, mapOptions);
-						  
-		var marker = new google.maps.Marker({position:myCenter});
-						  marker.setMap(map);
-		var infoWin =new google.maps.InfoWindow({ content: '<h1>!!BRAINSTORMER!!</h1>'});
-		
-		marker.addListener('click',function(){infoWin.open(map,marker);});
-	}
+	
 
 
 	var waypoints = $('#photos').waypoint({
@@ -48,3 +33,4 @@ $(document).ready(function(){
 	});
 
 });
+
