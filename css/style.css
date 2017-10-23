@@ -46,7 +46,6 @@ h6 {
     background-position:0 0;
     -webkit-transition:background-position .3s ease-out;
     min-height: 17vh;
-    vertical-align: middle;
 }
 
 .animated-bg-btn:hover{
@@ -56,4 +55,10 @@ h6 {
 
 .animated-bg-btn span p{
 	display: none;
+}
+
+.contact-card{
+	padding: 0px; 
+	margin: 0px;
+	min-height: 15vh;
 }
