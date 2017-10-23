@@ -5,6 +5,7 @@
     <title>Brainstormer 2017</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,7 +66,8 @@
     <div class="w3-padding-large" id="main">
         <!-- Header/Home -->
         <header class="w3-container w3-padding-32 w3-center" id="home">
-            <h1 class="w3-jumbo"><span class="w3-hide-small">Brainstormers</span> 2017</h1>
+            <h1 class="w3-jumbo"><div id="first" class="animated rubberBand" style="-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: 1;">Brainstormer 2017
+		</div></h1>
             <p>powered by phoenix</p>
             <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
         </header>
@@ -278,19 +280,16 @@ var msnry = new Masonry( container, {
             </form>
             <!-- End Contact Section -->
         </div>
+	</div>
         <!-- Footer -->
-        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        <footer class="w3-container w3-text-white w3-xxlarge w3-black w3-center w3-padding-64" style="margin-left:120px;">
+            <a href="https://www.facebook.com/phoenix.brainstormer/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            
+            <p class="w3-medium">Powered by <a href="https://www.facebook.com/nsec.phoenix/" target="_blank" class="w3-hover-text-green">Phoenix</a></p>
             <!-- End footer -->
         </footer>
         <!-- END PAGE CONTENT -->
-    </div>
+    
 
     <script src="js/jquery.min.js" ></script>
     <script src="js/script.js" ></script>
