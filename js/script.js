@@ -25,11 +25,11 @@ $(document).ready(function(){
 
 
 	$('.animated-bg-btn').mouseenter(function(){
-		$(this).find('span').find('p').slideDown();
+		$(this).find('span').find('p').slideDown(175);
 	});
 
 	$('.animated-bg-btn').mouseleave(function(){
-		$(this).find('span').find('p').slideUp();
+		$(this).find('span').find('p').slideUp(175);
 	});
 
 });
