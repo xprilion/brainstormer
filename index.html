@@ -252,6 +252,9 @@ var msnry = new Masonry( container, {
                 <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
             </div>
+			
+			<div id="map" style="width:100%;height:400px;background:yellow"></div>
+
             <br>
             <p>Lets get in touch. Send me a message:</p>
             <form action="contact.php" method = "post">
@@ -291,6 +294,32 @@ var msnry = new Masonry( container, {
 
     <script src="js/jquery.min.js" ></script>
     <script src="js/script.js" ></script>
+	
+	
+	<script>
+	
+	
+		function myMap() {
+		
+			var myCenter = new google.maps.LatLng(22.476038, 88.414892);
+							  
+			var mapCanvas = document.getElementById("map");
+							 
+			 var mapOptions = {center: myCenter, zoom: 16};
+							  
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+							  
+			var marker = new google.maps.Marker({position:myCenter});
+							  marker.setMap(map);
+			var infoWin =new google.maps.InfoWindow({ content: '<h1>!!BRAINSTORMER!!</h1>'});
+			
+			marker.addListener('click',function(){infoWin.open(map,marker);});
+		}
+	</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_1NesJh470UmhWj9bSLMcTYpL_8C01BM&callback=myMap"></script>
+
+
 <!--     <script src="js/bg.js" ></script>
  -->
 </body>
