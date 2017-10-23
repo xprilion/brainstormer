@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -230,45 +231,86 @@
             <!-- End Contact Section -->
         </div>
 	</div>
-        <!-- Footer -->
-        <footer class="w3-container w3-text-white w3-xxlarge w3-black w3-center w3-padding-64" style="margin-left:120px;">
+    <!-- Footer -->
+    <footer class="w3-container w3-text-white w3-black w3-center" style="margin-left:120px; padding: 64px 64px 0 64px">
+        <span class="w3-xxlarge">
             <a href="https://www.facebook.com/phoenix.brainstormer/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
             
             <p class="w3-medium">Powered by <a href="https://www.facebook.com/nsec.phoenix/" target="_blank" class="w3-hover-text-green">Phoenix</a></p>
-            <!-- End footer -->
-        </footer>
-        <!-- END PAGE CONTENT -->
+        </span>
+
+        <hr class="style15">
+
+        <div class="w3-row w3-center w3-small">
+            <div class="w3-quarter">
+                <a href="https://facebook.com/reetika.gautam.3">
+                    <div class="button-container button-flip3d-vertical2">
+                        <div class="flipper flipper-flip3d-vertical2">
+                            <div class="button front">
+                                RG
+                            </div>
+                            <div class="button button-3d back">
+                                Reetika
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://facebook.com/nabanitab">
+                    <div class="button-container button-flip3d-vertical2">
+                        <div class="flipper flipper-flip3d-vertical2">
+                            <div class="button front">
+                                NB
+                            </div>
+                            <div class="button button-3d back">
+                                Nabanita
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w3-quarter">
+                <a href="http://xsonic.in/">
+                    <div class="button-container button-flip3d-vertical2">
+                        <div class="flipper flipper-flip3d-vertical2">
+                            <div class="button front">
+                                MG
+                            </div>
+                            <div class="button button-3d back">
+                                Mayank
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://xprilion.com">
+                    <div class="button-container button-flip3d-vertical2">
+                        <div class="flipper flipper-flip3d-vertical2">
+                            <div class="button front">
+                                AS
+                            </div>
+                            <div class="button button-3d back">
+                                Anubhav
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- End footer -->
+    </footer>
+    <!-- END PAGE CONTENT -->
     
 
     <script src="js/jquery.min.js" ></script>
     <script src='js/masonry.pkgd.min.js'></script>
-    <script src="js/parallax.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script.js" ></script>
-	
-	
-	<script>
-	
-	
-		function myMap() {
-		
-			var myCenter = new google.maps.LatLng(22.476038, 88.414892);
-							  
-			var mapCanvas = document.getElementById("map");
-							 
-			 var mapOptions = {center: myCenter, zoom: 16};
-							  
-			var map = new google.maps.Map(mapCanvas, mapOptions);
-							  
-			var marker = new google.maps.Marker({position:myCenter});
-							  marker.setMap(map);
-			var infoWin =new google.maps.InfoWindow({ content: '<h1>!!BRAINSTORMER!!</h1>'});
-			
-			marker.addListener('click',function(){infoWin.open(map,marker);});
-		}
-	</script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_1NesJh470UmhWj9bSLMcTYpL_8C01BM&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_1NesJh470UmhWj9bSLMcTYpL_8C01BM&callback=myMap"></script>
 
 
 <!--     <script src="js/bg.js" ></script>
