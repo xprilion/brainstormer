@@ -13,11 +13,23 @@ Task distribution for 24 Oct, 17:
 	 - About section [About Phoenix | About Brainstormer] (in two-column layout) [w3-row | w3-col m6]
 	 - Add Phone Number field for the DB and the Contact Form
  - Reetika
-	 - Style the Map 
+	 - Style the Map
+	 - Make contact form work through AJAX (use below ajax call with modifications as per need)
+	 
+
+> ` $.ajax({
+		type: "POST",
+		url: "contact.php",
+		data: {name: name, phone: phone, *php variable catch name* : *js variable name* }
+	}).done(function(result) {
+	console.log(result);
+	});`
+
  - Anubhav
 	 - Menu Effects (Waypoints)
 	 - Site Interactivity
 	 
+
 
 ---------------
 ---------------
