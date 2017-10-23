@@ -41,12 +41,19 @@ h6 {
     background:green;
     position:relative;
     padding:2px 5px;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%,red), color-stop(50.001%,green));
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%,black), color-stop(50.001%,white));
     background-size:200% 100%;
     background-position:0 0;
     -webkit-transition:background-position .3s ease-out;
+    min-height: 17vh;
+    vertical-align: middle;
 }
 
 .animated-bg-btn:hover{
     background-position:-100% 0;
+}
+
+
+.animated-bg-btn span p{
+	display: none;
 }
