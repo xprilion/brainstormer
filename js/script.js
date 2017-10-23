@@ -1,1 +1,7 @@
-var i = 10;
+$(document).ready(function(){
+
+
+
+
+
+});
