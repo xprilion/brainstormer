@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2017 at 09:25 PM
+-- Generation Time: Oct 24, 2017 at 05:54 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -36,6 +36,7 @@ CREATE TABLE `contactdetails` (
   `message` text NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ip` varchar(128) NOT NULL DEFAULT 'not found',
+  `phonenumber` bigint(11) DEFAULT NULL,
   `viewed` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
