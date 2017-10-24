@@ -16,13 +16,14 @@ catch(PDOException $e)
 	
 	
 // define variables and set to empty values
-$name = $email = $subject = $message = $ip = "";
+$name = $email = $subject = $message = $ip = $phonenumber = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = test_input(filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING));
   $email = test_input(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
   $subject = test_input(filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING));
   $message = test_input(filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING));
+  $phonenumber = test_input(filter_input(INPUT_POST, 'phonenumber', FILTER_SANITIZE_STRING));
 }
 
 function test_input($data) {
@@ -60,7 +61,7 @@ try {
 		} else {
 		$ip = $_SERVER['REMOTE_ADDR'];
 		}
-		$sql = "INSERT INTO contactdetails (name, email, subject, message, ip) VALUES ('$name', '$email', '$subject', '$message', '$ip')";
+		$sql = "INSERT INTO contactdetails (name, email, subject, message, ip, phonenumber) VALUES ('$name', '$email', '$subject', '$message', '$ip','$phonenumber')";
 		$conn->exec($sql);
 		echo "New record created successfully";
 	}
