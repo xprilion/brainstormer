@@ -5,43 +5,54 @@
     <title>Brainstormer 2017</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="css/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-	<style>
-	* {
-	  -webkit-box-sizing: border-box;
-	     -moz-box-sizing: border-box;
-		  box-sizing: border-box;
-	}
+    <style>
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
-	.item {
-	  width:  50px;
-	  height: 50px;
-	  float: left;
-	  background: #2296DD;
-	  border: 2px solid #333;
-	}
+    .item {
+        width: 50px;
+        height: 50px;
+        float: left;
+        background: #2296DD;
+        border: 2px solid #333;
+    }
 
-	.item.thumbnail { width:  100px;height: 100px; background:#cfcfcf }
-	.item.medium { width:  150px;height: 50px; background: #A6E392}
-	.item.large { width:  200px;height: 100px; background: #D092E3}
+    .item.thumbnail {
+        width: 100px;
+        height: 100px;
+        background: #cfcfcf
+    }
 
+    .item.medium {
+        width: 150px;
+        height: 50px;
+        background: #A6E392
+    }
 
-	</style>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-<style>
-.w3-lobster {
-    font-family: "Lobster", serif;
-}
-</style>
-	
+    .item.large {
+        width: 200px;
+        height: 100px;
+        background: #D092E3
+    }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+    .w3-lobster {
+        font-family: "Lobster", serif;
+    }
+    </style>
 </head>
 
-<body >
+<body>
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
@@ -83,26 +94,23 @@
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
         <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center" id="home">
-
-            <h1 class="w3-jumbo"><div id="first" class="animated rubberBand w3-hide-small" style="-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: 1;">Brainstormer 2K17
-		  </div></h1>
-		  <h1 class=" w3-display-container w3-lobster w3-xxxlarge w3-panel w3-topbar w3-bottombar w3-border-black"><span class="w3-hide-large w3-hide-medium"><div id="first" class="animated rubberBand" style="-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: 1;">Brainstormer 2017</div></span></h1>
-		
-            <p>powered by phoenix</p>
-            <img src="img/logo.png" alt="boy" class="w3-image">
+        <header class="w3-container w3-padding-32 w3-center vh100 w3-display-container" id="home">
+            <!-- <h1 class="w3-jumbo"><div id="first" class="animated rubberBand w3-hide-small" style="-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: 1;">Brainstormer 2K17
+          </div></h1>
+            <h1 class=" w3-display-container w3-lobster w3-xxxlarge w3-panel w3-topbar w3-bottombar w3-border-black"><span class="w3-hide-large w3-hide-medium"><div id="first" class="animated rubberBand" style="-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: 1;">Brainstormer 2017</div></span></h1> -->
+            <div class="w3-content w3-white w3-padding-large w3-display-middle" id="logoContainer">
+                <img src="img/logo2.png" alt="Brainstormer Logo" class="w3-image" id="logoImg">
+            </div>
         </header>
         <!-- About Section -->
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
             <h2 class="w3-text-light-grey">Brainstormer - Unbolt knowledge with the speed of thought</h2>
             <hr style="width:200px" class="w3-opacity">
             <p>
-			Brainstormer is the annual quiz competition organised by Phoenix - the official tech-club of Netaji Subhash Engineering College. Brainstormer has seen a surge in the number of enthusiastic participants each year, with students from notable institutions taking part from all over the country. In 2016, one of the country's leading and most sought after quizmaster, Mr. Barry O' Brien hosted this significant event, with a participation of more than 500 students. This year it is going to be even Bigger and Better! 
+                Brainstormer is the annual quiz competition organised by Phoenix - the official tech-club of Netaji Subhash Engineering College. Brainstormer has seen a surge in the number of enthusiastic participants each year, with students from notable institutions taking part from all over the country. In 2016, one of the country's leading and most sought after quizmaster, Mr. Barry O' Brien hosted this significant event, with a participation of more than 500 students. This year it is going to be even Bigger and Better!
             </p>
-
             <br>
             <br>
-
             <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
                 <div class="w3-quarter w3-section">
                     <span class="w3-xlarge">11+</span>
@@ -121,15 +129,13 @@
                     <br> Winners
                 </div>
             </div>
-          
         </div>
         <!-- Portfolio Section -->
         <div class="w3-padding-64 w3-content" id="photos">
             <h2 class="w3-text-light-grey">My Photos</h2>
             <hr style="width:200px" class="w3-opacity">
-			<div id='masonry' >
+            <div id='masonry'>
                 <div class="item"></div>
-
                 <div class="item"></div>
                 <div class="item thumbnail"></div>
                 <div class="item medium"></div>
@@ -182,17 +188,15 @@
                 <div class="item"></div>
                 <div class="item"></div>
                 <div class="item"></div>
-	        </div>
- 
+            </div>
         </div>
-            <!-- End Portfolio Section -->
-
+        <!-- End Portfolio Section -->
         <!-- Contact Section -->
         <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
             <h2 class="w3-text-light-grey">Contact US</h2>
             <hr style="width:50%" class="w3-opacity">
             <div class="w3-section">
-    			<div class="w3-row">
+                <div class="w3-row">
                     <div class="w3-text-white w3-large w3-col s4 w3-grey w3-center contact-card w3-display-container">
                         <span class="w3-display-middle">
                             <i class="fa fa-map-marker fa-fw"></i><br>Chicago, US
@@ -203,23 +207,18 @@
                             <i class="fa fa-phone fa-fw"></i><br>+00 151515
                         </span>
                     </div>
-
                     <div class="w3-text-white w3-small w3-col s4 w3-teal w3-center contact-card w3-display-container">
                         <span class="w3-display-middle">
                             <i class="fa fa-envelope fa-fw"></i><br>mail@mail.com
                         </span>
                     </div>
                 </div>
-			</div>
-						
-			<div id="map" style="width:100%;height:400px;background:yellow"></div>
-
+            </div>
+            <div id="map" style="width:100%;height:400px;background:yellow"></div>
             <br>
-
             <h2 class="w3-text-light-grey">Drop us a message!</h2>
             <hr style="width:50%" class="w3-opacity">
-            
-            <form action="contact.php" method = "post">
+            <form action="contact.php" method="post">
                 <p>
                     <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name">
                 </p>
@@ -232,7 +231,7 @@
                 <p>
                     <input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="message">
                 </p>
-				<p>
+                <p>
                     <input class="w3-input w3-padding-16" type="text" placeholder="Phone Number" required name="phonenumber">
                 </p>
                 <p>
@@ -243,111 +242,100 @@
             </form>
             <!-- End Contact Section -->
         </div>
-	</div>
-    <!-- Footer -->
-    <footer class="w3-container w3-text-white w3-black w3-center" style="padding: 64px 64px 0 64px">
-        <span class="w3-xxlarge">
+        </div>
+        <!-- Footer -->
+        <footer class="w3-container w3-text-white w3-black w3-center" style="padding: 64px 64px 0 64px">
+            <span class="w3-xxlarge">
             <a href="https://www.facebook.com/phoenix.brainstormer/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
             
             <p class="w3-medium">Powered by <a href="https://www.facebook.com/nsec.phoenix/" target="_blank" class="w3-hover-text-green">Phoenix</a></p>
         </span>
-	<br>
-        <hr class="style15">
-
-        <div class="w3-row w3-center w3-small">
-            <div class="w3-quarter">
-                <a href="https://facebook.com/reetika.gautam.3">
-                    <div class="button-container button-flip3d-vertical2">
-                        <div class="flipper flipper-flip3d-vertical2">
-                            <div class="button front">
-                                RG
-                            </div>
-                            <div class="button button-3d back">
-                                Reetika
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="w3-quarter">
-                <a href="https://facebook.com/nabanitab">
-                    <div class="button-container button-flip3d-vertical2">
-                        <div class="flipper flipper-flip3d-vertical2">
-                            <div class="button front">
-                                NB
-                            </div>
-                            <div class="button button-3d back">
-                                Nabanita
+            <br>
+            <hr class="style15">
+            <div class="w3-row w3-center w3-small">
+                <div class="w3-quarter">
+                    <a href="https://facebook.com/reetika.gautam.3">
+                        <div class="button-container button-flip3d-vertical2">
+                            <div class="flipper flipper-flip3d-vertical2">
+                                <div class="button front">
+                                    RG
+                                </div>
+                                <div class="button button-3d back">
+                                    Reetika
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="w3-quarter">
-                <a href="http://xsonic.in/">
-                    <div class="button-container button-flip3d-vertical2">
-                        <div class="flipper flipper-flip3d-vertical2">
-                            <div class="button front">
-                                MG
-                            </div>
-                            <div class="button button-3d back">
-                                Mayank
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="w3-quarter">
-                <a href="https://xprilion.com">
-                    <div class="button-container button-flip3d-vertical2">
-                        <div class="flipper flipper-flip3d-vertical2">
-                            <div class="button front">
-                                AS
-                            </div>
-                            <div class="button button-3d back">
-                                Anubhav
+                    </a>
+                </div>
+                <div class="w3-quarter">
+                    <a href="https://facebook.com/nabanitab">
+                        <div class="button-container button-flip3d-vertical2">
+                            <div class="flipper flipper-flip3d-vertical2">
+                                <div class="button front">
+                                    NB
+                                </div>
+                                <div class="button button-3d back">
+                                    Nabanita
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <div class="w3-quarter">
+                    <a href="http://xsonic.in/">
+                        <div class="button-container button-flip3d-vertical2">
+                            <div class="flipper flipper-flip3d-vertical2">
+                                <div class="button front">
+                                    MG
+                                </div>
+                                <div class="button button-3d back">
+                                    Mayank
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="w3-quarter">
+                    <a href="https://xprilion.com">
+                        <div class="button-container button-flip3d-vertical2">
+                            <div class="flipper flipper-flip3d-vertical2">
+                                <div class="button front">
+                                    AS
+                                </div>
+                                <div class="button button-3d back">
+                                    Anubhav
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <!-- End footer -->
-    </footer>
-    <!-- END PAGE CONTENT -->
-    
-
-    <script src="js/jquery.min.js" ></script>
-    <script src='js/masonry.pkgd.min.js'></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/script.js" ></script>
-
-    <script>
-
+            <!-- End footer -->
+        </footer>
+        <!-- END PAGE CONTENT -->
+        <script src="js/jquery.min.js"></script>
+        <script src='js/masonry.pkgd.min.js'></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
         function myMap() {
-                
+
             var myCenter = new google.maps.LatLng(22.476038, 88.414892);
-                              
+
             var mapCanvas = document.getElementById("map");
-                             
-             var mapOptions = {center: myCenter, zoom: 16};
-                              
+
+            var mapOptions = { center: myCenter, zoom: 16 };
+
             var map = new google.maps.Map(mapCanvas, mapOptions);
-                              
-            var marker = new google.maps.Marker({position:myCenter});
-                              marker.setMap(map);
-            var infoWin =new google.maps.InfoWindow({ content: '<h1>!!BRAINSTORMER!!</h1>'});
-            
-            marker.addListener('click',function(){infoWin.open(map,marker);});
+
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+            var infoWin = new google.maps.InfoWindow({ content: '<h1>!!BRAINSTORMER!!</h1>' });
+
+            marker.addListener('click', function() { infoWin.open(map, marker); });
         }
-
-    </script>
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_1NesJh470UmhWj9bSLMcTYpL_8C01BM&callback=myMap"></script>
-
-    
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_1NesJh470UmhWj9bSLMcTYpL_8C01BM&callback=myMap"></script>
 </body>
 
 </html>

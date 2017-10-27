@@ -1,7 +1,7 @@
 body {
-background: ##ff22cf;
-background-image: url("../img/zenbg-1.png"), url("../img/zenbg-2.png");
-background-repeat: repeat-y, repeat;
+    background: ##ff22cf;
+    background-image: url("../img/zenbg-1.png"), url("../img/zenbg-2.png");
+    background-repeat: repeat-y, repeat;
 }
 
 body,
@@ -17,17 +17,23 @@ h6 {
 .w3-row-padding img {
     margin-bottom: 12px
 }
+
+
 /* Set the width of the sidebar to 120px */
 
 .w3-sidebar {
     width: 120px;
     background: #222;
 }
+
+
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 
 #main {
     margin-left: 120px
 }
+
+
 /* Remove margins from "page content" on small screens */
 
 @media only screen and (max-width: 600px) {
@@ -36,56 +42,151 @@ h6 {
     }
 }
 
-.animated-bg-btn:nth-child(2){
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%,black), color-stop(50.001%,red));
+.animated-bg-btn:nth-child(2) {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50.001%, red));
 }
 
-.animated-bg-btn:nth-child(3){
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%,black), color-stop(50.001%,blue));
+.animated-bg-btn:nth-child(3) {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50.001%, blue));
 }
 
-.animated-bg-btn:nth-child(4){
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%,black), color-stop(50.001%,green));
+.animated-bg-btn:nth-child(4) {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50.001%, green));
 }
 
-.animated-bg-btn:nth-child(5){
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%,black), color-stop(50.001%,yellow));
+.animated-bg-btn:nth-child(5) {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50.001%, yellow));
 }
 
-.animated-bg-btn{
-    display:inline-block;
-    position:relative;
-    padding:2px 5px;
-    background-size:200% 100%;
-    background-position:0 0;
-    -webkit-transition:background-position .3s ease-out;
+.animated-bg-btn {
+    display: inline-block;
+    position: relative;
+    padding: 2px 5px;
+    background-size: 200% 100%;
+    background-position: 0 0;
+    -webkit-transition: background-position .3s ease-out;
     min-height: 17vh;
 }
 
-.animated-bg-btn:hover{
-    background-position:-100% 0;
+.animated-bg-btn:hover {
+    background-position: -100% 0;
 }
 
-.animated-bg-btn span p{
-	display: none;
+.animated-bg-btn span p {
+    display: none;
 }
 
-.contact-card{
-	padding: 0px; 
-	margin: 0px;
-	min-height: 15vh;
+.contact-card {
+    padding: 0px;
+    margin: 0px;
+    min-height: 15vh;
 }
 
 
 hr.style15 {
-	border-top: 4px double #8c8b8b;
-	text-align: center;
+    border-top: 4px double #8c8b8b;
+    text-align: center;
 }
+
 hr.style15:after {
-	content: '\002764';
+    content: '\002764';
     display: inline-block;
     position: relative;
     top: -0.75em;
     color: #b50000;
     font-size: 2.5em;
+}
+
+.vh100 {
+    min-height: 100vh;
+}
+
+
+#logoContainer {
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 20px 0px #000 inset;
+    position: fixed;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 100px);
+}
+
+@media only screen and (max-width: 500px) {
+    #logoContainer {
+        top: calc(50vh - 120px);
+        left: calc(50vw - 120px);
+    }
+}
+
+#logoImg {
+    height: 100%;
+}
+
+.doExpand{
+    animation: logoExpand 1s;
+}
+
+@keyframes logoExpand {
+    0% {
+        width: 200px;
+        border-radius: 1000px;
+        left: calc(50vw - 100px);
+    }
+    25% {
+        width: 300px;
+        border-radius: 100px;
+        left: calc(50vw - 150px);
+    }
+    50% {
+        width: 400px;
+        border-radius: 1000px;
+        left: calc(50vw - 200px);
+    }
+    75% {
+        width: 500px;
+        border-radius: 1000px;
+        left: calc(50vw - 250px);
+    }
+    100% {
+        width: 600px;
+        border-radius: 10px;
+        left: calc(50vw - 300px);
+    }
+}
+
+.spinner {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 250ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -6,6 +6,11 @@ $(document).ready(function(){
 		itemSelector: '.item'
 	});
 
+	// Logo Animation Sequence
+
+	$('#logoContainer').css('opacity', '1').addClass('animated bounceInDown');
+
+	setTimeout(function(){ $('#logoContainer').addClass('doExpand'); }, 3000);
 	
 
 
