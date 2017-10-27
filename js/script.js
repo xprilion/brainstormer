@@ -12,9 +12,8 @@ $(document).ready(function(){
 
 	$('#logoContainerMobile').css('opacity', '1').addClass('animated bounceInDown');
 
-	setTimeout(function(){ $('#logoContainer').addClass('doExpand'); }, 3000);
-
-	setTimeout(function(){ $('#logoText').css('opacity', '1').addClass('animated slideInRight'); }, 3601);
+	setTimeout(function(){ $('#logoContainer').addClass('doExpand'); }, 2000);
+	setTimeout(function(){ $('#logoText').css('opacity', '1').textillate({ in: { effect: 'rollIn' }});  }, 2750);
 
 	 
 	
