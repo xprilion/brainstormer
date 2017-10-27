@@ -10,7 +10,13 @@ $(document).ready(function(){
 
 	$('#logoContainer').css('opacity', '1').addClass('animated bounceInDown');
 
+	$('#logoContainerMobile').css('opacity', '1').addClass('animated bounceInDown');
+
 	setTimeout(function(){ $('#logoContainer').addClass('doExpand'); }, 3000);
+
+	setTimeout(function(){ $('#logoText').css('opacity', '1').addClass('animated slideInRight'); }, 3601);
+
+	 
 	
 
 

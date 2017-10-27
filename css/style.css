@@ -102,7 +102,7 @@ hr.style15:after {
 }
 
 
-#logoContainer {
+#logoContainer, #logoContainerMobile {
     height: 200px;
     width: 200px;
     opacity: 0;
@@ -113,46 +113,42 @@ hr.style15:after {
     left: calc(50vw - 100px);
 }
 
+#logoText{
+    vertical-align: middle;
+    font-size: 4rem;
+    line-height: 175px;
+    font-family: MONOSPACE;
+    color: #403d3f;
+    opacity: 0;
+}
+
 @media only screen and (max-width: 500px) {
-    #logoContainer {
+    #logoContainer, #logoContainerMobile  {
         top: calc(50vh - 120px);
         left: calc(50vw - 120px);
     }
 }
 
-#logoImg {
+.logoImg {
     height: 100%;
+    float: left;
 }
 
 .doExpand{
-    animation: logoExpand 1s;
+    animation: logoExpand 0.5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes logoExpand {
-    0% {
+    from {
         width: 200px;
-        border-radius: 1000px;
-        left: calc(50vw - 100px);
+        top: calc(50vh);
     }
-    25% {
-        width: 300px;
-        border-radius: 100px;
-        left: calc(50vw - 150px);
-    }
-    50% {
-        width: 400px;
-        border-radius: 1000px;
-        left: calc(50vw - 200px);
-    }
-    75% {
-        width: 500px;
-        border-radius: 1000px;
-        left: calc(50vw - 250px);
-    }
-    100% {
+    to {
         width: 600px;
         border-radius: 10px;
-        left: calc(50vw - 300px);
+        top: calc(50vh);
+        left: calc(50vw);
     }
 }
 
