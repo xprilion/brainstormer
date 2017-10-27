@@ -1,7 +1,32 @@
 body {
     background: ##ff22cf;
-    background-image: url("../img/zenbg-1.png"), url("../img/zenbg-2.png");
     background-repeat: repeat-y, repeat;
+    transition: background-image 0.5s ease-in;
+}
+
+.bg-green{
+    background-image: url("../img/green/zenbg-1.png"), url("../img/green/zenbg-2.png");
+    transition: background-image 0.5s ease-in;
+}
+
+.bg-purple{
+    background-image: url("../img/purple/zenbg-1.png"), url("../img/purple/zenbg-2.png");
+    transition: background-image 0.5s ease-in;
+}
+
+.bg-brown{
+    background-image: url("../img/brown/zenbg-1.png"), url("../img/brown/zenbg-2.png");
+    transition: background-image 0.5s ease-in;
+}
+
+.bg-red{
+    background-image: url("../img/red/zenbg-1.png"), url("../img/red/zenbg-2.png");
+    transition: background-image 0.5s ease-in;
+}
+
+.bg-violet{
+    background-image: url("../img/violet/zenbg-1.png"), url("../img/violet/zenbg-2.png");
+    transition: background-image 0.5s ease-in;
 }
 
 body,
