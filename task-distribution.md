@@ -1,6 +1,11 @@
 Welcome to Brainstormer Dev Team!
 ===================
 
+	Check your task distributions on: https://github.com/xprilion/brainstormer/projects/1
+
+
+-----------------------
+
 Task distribution for 24 Oct, 17: 
 
 ----------
