@@ -20,8 +20,10 @@ $(document).ready(function(){
 
 	var bgChanger = setInterval(function(){
 		$('.logoImg').addClass('spinner');
+		$('#navbarLogo').addClass('spinner');
 		setTimeout(function(){
 			$('.logoImg').removeClass('spinner');
+			$('#navbarLogo').removeClass('spinner');
 			nextCol = nowCol + 1;
 			if(nowCol==4){
 				nextCol = 0;
@@ -61,4 +63,3 @@ $(document).ready(function(){
 	});
 
 });
-
