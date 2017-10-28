@@ -52,6 +52,9 @@ h6 {
 	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%,black), color-stop(50.001%,yellow));
 }
 
+.animated-bg-btn:nth-child(6){
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%,black), color-stop(50.001%,teal));
+}
 .animated-bg-btn{
     display:inline-block;
     position:relative;
@@ -89,3 +92,4 @@ hr.style15:after {
     color: #b50000;
     font-size: 2.5em;
 }
+s

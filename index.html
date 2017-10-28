@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-	<style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+      $(document).ready(function(){
+        $("#show").click(function(){
+        $("div").show();
+    });
+	
+    });
+   </script>
+     <style>
+
 	* {
 	  -webkit-box-sizing: border-box;
 	     -moz-box-sizing: border-box;
@@ -70,6 +80,7 @@
                 <p>CONTACT</p>
             </span>
         </a>
+		
     </nav>
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
@@ -123,69 +134,57 @@
             </div>
           
         </div>
-        <!-- Portfolio Section -->
-        <div class="w3-padding-64 w3-content" id="photos">
-            <h2 class="w3-text-light-grey">My Photos</h2>
-            <hr style="width:200px" class="w3-opacity">
-			<div id='masonry' >
-                <div class="item"></div>
+		<!--container (portfolio section) start-->
+        <h1><div class="w3-content w3-container w3-padding-64 w3-jumbo w3-center">GALLERY</h1>
+  <div class="w3-row-padding w3-center" >
+    <div class="w3-col m3">
+      <img src="img/FB_IMG_15090433881669785-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+	<div class="w3-col m3">
+      <img src="img/FB_IMG_15090434930525588-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+	<div class="w3-col m3">
+      <img src="img/FB_IMG_15090435551603563-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+	<div class="w3-col m3">
+      <img src="img/FB_IMG_15090435945495539-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+	<div class="w3-col s12 w3-small">&nbsp;</div>
+	<div class="w3-col m3">
+      <img src="img/FB_IMG_15090436103010632-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+	<div class="w3-col m3">
+      <img src="img/IMG_20171027_002837-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+	<div class="w3-col m3">
+      <img src="img/FB_IMG_15090436973692020-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+	<div class="w3-col m3">
+      <img src="img/IMG_20171027_002734-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>	
+  </div>
+	<div id="gallery-hid" style="display:none;">
+	  <div class="w3-row-padding w3-center w3-section">
+		<div class="w3-col m3">
+		  <img src="img/IMG_20171027_002649-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+		</div>
+		<div class="w3-col m3">
+		  <img src="img/IMG_20171027_002634-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+		</div>
+		<div class="w3-col m3">
+		  <img src="img/FB_IMG_15090434003179424-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+		</div>
+		<div class="w3-col m3">
+		  <img src="img/IMG_20171027_002815-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+		</div>
+	  </div>
+	</div>
+	<div class="w3-center">
+	<button class="w3-button w3-padding-xlarge" style="margin-top:64px;" id="show">LOAD MORE</button>
+	</div>
+</div>
+<!-- Container (Portfolio Section) -->
 
-                <div class="item"></div>
-                <div class="item thumbnail"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item large"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item thumbnail"></div>
-                <div class="item"></div>
-                <div class="item thumbnail"></div>
-                <div class="item large"></div>
-                <div class="item thumbnail"></div>
-                <div class="item"></div>
-                <div class="item thumbnail"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item large"></div>
-                <div class="item medium"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item thumbnail"></div>
-                <div class="item"></div>
-                <div class="item thumbnail"></div>
-                <div class="item large"></div>
-                <div class="item large"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item medium"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-	        </div>
- 
-        </div>
-            <!-- End Portfolio Section -->
 
         <!-- Contact Section -->
         <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -195,18 +194,18 @@
     			<div class="w3-row">
                     <div class="w3-text-white w3-large w3-col s4 w3-grey w3-center contact-card w3-display-container">
                         <span class="w3-display-middle">
-                            <i class="fa fa-map-marker fa-fw"></i><br>Chicago, US
+                            <i class="fa fa-map-marker fa-fw"></i><br>NSEC
                         </span>
                     </div>
                     <div class="w3-text-white w3-large w3-col s4 w3-black w3-center contact-card w3-display-container">
                         <span class="w3-display-middle">
-                            <i class="fa fa-phone fa-fw"></i><br>+00 151515
+                            <i class="fa fa-map-marker fa-fw"></i><br><a href="tel:7979085198">7979085198</a><br><a href="tel:=7909075605">7909075605</a>
                         </span>
                     </div>
 
                     <div class="w3-text-white w3-small w3-col s4 w3-teal w3-center contact-card w3-display-container">
                         <span class="w3-display-middle">
-                            <i class="fa fa-envelope fa-fw"></i><br>mail@mail.com
+                            <i class="fa fa-envelope fa-fw"></i><br>mail@xsonic.in
                         </span>
                     </div>
                 </div>
