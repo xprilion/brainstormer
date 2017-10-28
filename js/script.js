@@ -28,8 +28,6 @@ $(document).ready(function(){
 			}
 			$('body').removeClass('bg-'+colors[nowCol]).addClass('bg-'+colors[nextCol]);
 			nowCol = nextCol;
-			
-
 		}, 1500);
 	}, 5000);
 
