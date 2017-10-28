@@ -94,14 +94,18 @@
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
         <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center" id="home">
+        <header class="w3-container w3-padding-32 w3-center vh100 w3-display-container" id="home">
+            <div class="w3-content w3-white w3-padding-large w3-display-middle w3-hide-small" id="logoContainer">
+                <img src="img/logo2.png" alt="Brainstormer Logo" class="w3-image logoImg">
+                <span id="logoText">rainstormer</span>
+            </div>
+            <div class="w3-content w3-white w3-padding-large w3-display-middle w3-hide-medium w3-hide-large" id="logoContainerMobile">
+                <img src="img/logo2.png" alt="Brainstormer Logo" class="w3-image logoImg">
+            </div>
 
-            <h1 class="w3-jumbo"><div id="first" class="animated rubberBand w3-hide-small" style="-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: 1;">Brainstormer 2K17
-		</div></h1>
-		<h1 class=" w3-display-container w3-lobster w3-xxxlarge w3-panel w3-topbar w3-bottombar w3-border-black"><span class="w3-hide-large w3-hide-medium"><div id="first" class="animated rubberBand" style="-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count: 1;">Brainstormer 2017</div></span></h1>
-		
-            <p>powered by phoenix</p>
-            <img src="img/brain.png" alt="boy" class="w3-image" width="992" height="1108">
+            <a href="#register" id="register-btn" class="w3-display-bottommiddle">
+                Register Now!
+            </a>
         </header>
         <!-- About Section -->
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
@@ -134,62 +138,58 @@
             </div>
           
         </div>
-		<h2 class="w3-center w3-jumbo">!GALLERY!</h2>
+        <div class="w3-content w3-container w3-padding-64 w3-jumbo w3-text-light-grey" id="photos">
+            <h2 class="w3-text-light-grey">Gallery</h2>
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m3">
+                    <img src="img/FB_IMG_15090433881669785-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/FB_IMG_15090434930525588-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/FB_IMG_15090435551603563-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/FB_IMG_15090435945495539-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+                <div class="w3-col s12 w3-small">&nbsp;</div>
+                <div class="w3-col m3">
+                    <img src="img/FB_IMG_15090436103010632-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/IMG_20171027_002837-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/FB_IMG_15090436973692020-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/IMG_20171027_002734-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                </div>
+            </div>
+        </div>
+    <!-- End Portfolio Section -->
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Us</h2>
+        <hr style="width:50%" class="w3-opacity">
+        <div class="w3-section">
+            <div class="w3-row">
+                <div class="w3-text-white w3-large w3-col s4 w3-grey w3-center contact-card w3-display-container">
+                    <span class="w3-display-middle">
+                        <i class="fa fa-map-marker fa-fw"></i><br>NSEC
+                    </span>
+                </div>
+                <div class="w3-text-white w3-large w3-col s4 w3-black w3-center contact-card w3-display-container">
+                    <span class="w3-display-middle">
+                        <i class="fa fa-phone fa-fw"></i><br><a href="tel:7979085198">7979085198</a><br><a href="tel:=7909075605">7909075605</a>
+                    </span>
+                </div>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="img/FB_IMG_15090434930525588-min.jpg" style="width:100%">
-  <img class="mySlides" src="img/FB_IMG_15090435551603563-min.jpg" style="width:100%">
-  <img class="mySlides" src="img/FB_IMG_15090433881669785-min.jpg" style="width:100%">
-  <img class="mySlides" src="img/FB_IMG_15090435945495539-min.jpg" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-
-
-        <!-- Contact Section -->
-        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-            <h2 class="w3-text-light-grey w3-jumbo">Contact US</h2>
-            <hr style="width:50%" class="w3-opacity">
-            <div class="w3-section">
-    			<div class="w3-row">
-                    <div class="w3-text-white w3-large w3-col s4 w3-grey w3-center contact-card w3-display-container">
-                        <span class="w3-display-middle">
-                            <i class="fa fa-map-marker fa-fw"></i><br>NSEC
-                        </span>
-                    </div>
-                    <div class="w3-text-white w3-large w3-col s4 w3-black w3-center contact-card w3-display-container">
-                        <span class="w3-display-middle">
-                            <i class="fa fa-map-marker fa-fw"></i><br><a href="tel:7979085198">7979085198</a><br><a href="tel:=7909075605">7909075605</a>
-                        </span>
-                    </div>
-
-                    <div class="w3-text-white w3-small w3-col s4 w3-teal w3-center contact-card w3-display-container">
-                        <span class="w3-display-middle">
-                            <i class="fa fa-envelope fa-fw"></i><br>mail@xsonic.in
-                        </span>
-                    </div>
+                <div class="w3-text-white w3-small w3-col s4 w3-teal w3-center contact-card w3-display-container">
+                    <span class="w3-display-middle">
+                        <i class="fa fa-envelope fa-fw"></i><br>mail@xsonic.in
+                    </span>
                 </div>
 			</div>
 						
@@ -249,7 +249,73 @@ college).</li>
             </form>
             <!-- End Contact Section -->
         </div>
-	</div>
+        <div id="map" style="width:100%;height:400px;background:yellow"></div>
+        <br>
+        <h2 class="w3-text-light-grey">Drop us a message!</h2>
+        <hr style="width:50%" class="w3-opacity">
+        <form action="contact.php" method="post">
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="email">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="subject">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="message">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Phone Number" required name="phonenumber">
+            </p>
+            <p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+        </form>
+        <!-- End Contact Section -->
+        <br>
+        <h2 id="register" class="w3-text-light-grey">Register Yourself!</h2>
+        <hr style="width:50%" class="w3-opacity">
+        <form action="registration.php" method="post">
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="team_name">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Team Head's Name" required name="team_head_name">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Name of Team Member 2" required name="team_member_2">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Name of Team Member 3" required name="team_member_3">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Phone Number" required name="phone">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="email">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Institute Type" required name="institute_type">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Institute Name" required name="institute_name">
+            </p>
+            <p>
+                <input class="w3-input w3-padding-16" type="text" placeholder="Your ID" required name="your_id">
+            </p>
+            <p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                    <i class="fa fa-send"></i> REGISTER
+                </button>
+            </p>
+        </form>
+    </div>
+    <!-- Ending the Register Section -->
+    </div>
     <!-- Footer -->
     <footer class="w3-container w3-text-white w3-black w3-center" style="padding: 64px 64px 0 64px">
         <span class="w3-xxlarge">
