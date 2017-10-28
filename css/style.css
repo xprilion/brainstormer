@@ -159,7 +159,6 @@ hr.style15:after {
 }
 
 @media only screen and (min-width: 501px) {
-
     #register-btn{
         margin-left: -3em;
     }
@@ -227,5 +226,16 @@ hr.style15:after {
 #register-btn{
     margin-bottom: 3em;
     padding: 16px 50px;
+    background: #1277ff;
+    color: white;
+    text-shadow: 1px 1px #000;
+    box-shadow: 0px 0px 10px 0px #000;
+    text-decoration: none;
+}
 
+
+#register-btn:hover{
+    background: #1266ff;
+    text-shadow: 2px 2px #000;
+    box-shadow: 0px 0px 20px 0px #000;
 }
