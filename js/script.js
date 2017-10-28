@@ -28,14 +28,18 @@ $(document).ready(function(){
 			}
 			$('body').removeClass('bg-'+colors[nowCol]).addClass('bg-'+colors[nextCol]);
 			nowCol = nextCol;
-			
-
 		}, 1500);
 	}, 5000);
 
-	var waypoints = $('#photos').waypoint({
+	var headWaypoint = $('header').waypoint({
 		handler: function(direction) {
-			console.log(this.element.id + ' hit' + direction)
+			console.log(direction);
+			if(direction=="down"){
+				$('#logoContainer').fadeOut(500);
+			}
+			else{
+				$('#logoContainer').fadeIn(500);
+			}
 		}
 	});
 
