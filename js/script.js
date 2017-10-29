@@ -1,7 +1,8 @@
-$(document).ready(function(){
+var colors = ["green", "purple", "brown", "red", "violet"];
+var nowCol = 1;
 
-	var colors = ["green", "purple", "brown", "red", "violet"];
-	var nowCol = 1;
+
+$(document).ready(function(){
 
 	// Logo Animation Sequence
 
@@ -10,9 +11,11 @@ $(document).ready(function(){
 			console.log(direction);
 			if(direction=="down"){
 				$('#logoContainer').fadeOut(500);
+				$('#logoContainerMobile').fadeOut(500);
 			}
 			else{
 				$('#logoContainer').fadeIn(500);
+				$('#logoContainerMobile').fadeIn(500);
 			}
 		}
 	});
